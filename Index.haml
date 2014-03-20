@@ -16,7 +16,7 @@
       %a Media gallery
     %li
       %a Firefighter
-        .Aid
+      %div Aid
     %li
       .div{:name=> "social-media-icon"}
 
@@ -24,48 +24,48 @@
   %h1 2014
   %h1 Stair Climb
   %span September 7th san diego hilton bayfront
-  %input {:type=> "button", :name=> "register", :text=>"Register"}
-  %input {:type=> "button", :name=> "give", :text=>"Give"}
-  %input {:type=> "button", :name=> "sponsor", :text=>"Sponsor"}
+  %input{:type=> "button", :name=> "register", :text=>"Register"}
+  %input{:type=> "button", :name=> "give", :text=>"Give"}
+  %input{:type=> "button", :name=> "sponsor", :text=>"Sponsor"}
 
 %main
-  %section {:name=>"highlight-event"}
+  %section{:name=>"highlight-event"}
     %header
       %p On September 11th 2001
       %p ------------403---------
-      %p {:name=> "event-heading"} Emergency Responders
+      %p{:name=> "event-heading"} Emergency Responders
       %p Made the ultimate sacrifice in the performance of their sworn duty to protect life. Such sacrifices continue today.
     %main
       %aside
-        .
-          %img {:name=>"we-climb-for"}
-          %img {:name=>"we-will-climb"}
-          %img {:name=>"we-climb-to"}
-      .{:name=>"fund-raised-benefit"}
-        %img {:name=>"fund-raised-benefit-slides"}
+        %div
+          %img{:name=>"we-climb-for"}
+          %img{:name=>"we-will-climb"}
+          %img{:name=>"we-climb-to"}
+      %div{:name=>"fund-raised-benefit"}
+        %img{:name=>"fund-raised-benefit-slides"}
         %aside
           %p Fund raised will benefit
           %p FireFighterAid (Formerly teh San Diego FireFighters' Benevolent Fund,) the charity which cares for FireFighters and families through sickness, distress, and death.
-          %a {:name=> "more-about-the-climb"}
+          %a{:name=> "more-about-the-climb"}
 
-  %section {:name=>"register-now"}
+  %section{:name=>"register-now"}
     %header
       %h1 Join the cause
-      %input {:name=>"give-now", :text=>"Give Now"}
-      .{:name=>"social-media"}
+      %input{:name=>"give-now", :text=>"Give Now"}
+      %div{:name=>"social-media"}
     %main
       %p 501 Climber spaces left
-      %aside {:name=>"register-aside"}
+      %aside{:name=>"register-aside"}
 
-  %section {:name=> 'volunteer-score-board'}
+  %section{:name=> 'volunteer-score-board'}
     %header
       %h1 Volunteer for the stair climb event
       %p build your own web page, and collect donations
     %main
-      .{:name=>"score-board"}
+      %div{:name=>"score-board"}
         %span{:name=>"top-climbers"}
-        %time {:name=>"current-date"} DATE 02/17/2014
-        %time {:name=>"current-time"} TIME 5:43 PM
+        %time{:name=>"current-date"} DATE 02/17/2014
+        %time{:name=>"current-time"} TIME 5:43 PM
 
   %section{:name=>"top-10-donors"}
     %header
@@ -76,49 +76,49 @@
           %th Donar Name
           %th Amount Donated
           %th Team Name
-        $tr
+        %tr
           %td
           %td
           %td
 
-  %section {:name=>"honor-team"}
+  %section{:name=>"honor-team"}
     %header
       %h1 OUT 2013 HONOR TEAM
-      %img {:name=>"honor-team"}
+      %img{:name=>"honor-team"}
     %main
       %table
         %tr
           %th Team Name
           %th Captain
           %th Amount Raised
-        $tr
+        %tr
           %td
           %td
           %td
 
-  %section {:name=>"wall-of-hereos"}
+  %section{:name=>"wall-of-hereos"}
     %header
       %h1 Wall of Hereos
       %a See full wall
 
-  %section {:name=>"sponsors"}
+  %section{:name=>"sponsors"}
     %header
       %h1 Sponsors
     %main
-      .{:name=>"sponsors-list"}
+      %div{:name=>"sponsors-list"}
 
 
 %footer
-  .
+  %div
     %span
       %a Be a hero to a hero
-      %input {:name=>"Donate", :text=>"Donate"}
+      %input{:name=>"Donate", :text=>"Donate"}
     %span
       %a Register for
-      %input {:name=>"register-for-the-climb", :text=>"The climb"}
+      %input{:name=>"register-for-the-climb", :text=>"The climb"}
     %span
       %a Learn more about
-      %input {:name=>"learn-about-freefighteraid", :text=>"FreeFighterAid"}
-  .
-    %span {:name=>"social-media"}
+      %input{:name=>"learn-about-freefighteraid", :text=>"FreeFighterAid"}
+  %div
+    %span{:name=>"social-media"}
 
